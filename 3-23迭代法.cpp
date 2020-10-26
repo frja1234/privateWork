@@ -3,8 +3,6 @@
 #include <iostream>
 using namespace std;
 int main() {
-
-  
   float a, x0, x1;
   cin >> a;
   x0 = a / 2;
