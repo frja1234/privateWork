@@ -27,6 +27,13 @@ float intergral(float (*p)(float),float a,float b,int n){
         x=x+h;
 		s=s+(*p)(x)*h;
     }
+    /*
+    梯形法
+    s=((*p)(a)+(*p)(b))/2.0;
+    h=(b-a)/n;
+    for(int i=1;i<n;i++)s+=(*p)(a+i*h);
+    s*=h;
+    */
     return s;
 }
 float fsin(float x){

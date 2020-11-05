@@ -4,7 +4,7 @@ using namespace std;
 void haleSeek(int a[], int n, int x);
 //选择排序
 void selectSort(int a[], int n);
-//插入排序
+//插入排序edd
 void insertSort(int a[], int n);
 //快速排序
 void quickSort(int a[], int low, int high);
@@ -20,7 +20,7 @@ int main() {
   haleSeek(a, 10, 4);
 }
 void haleSeek(int a[], int n, int x) {
-  int low = 0, heigh = n, mid;
+  int low = 0, heigh = n-1, mid;
   while (low <= heigh) {
     // mid=(low+heigh)/2;
     mid = low + (x - a[low]) / (heigh - low) * (a[heigh] - a[low]);//自适应
