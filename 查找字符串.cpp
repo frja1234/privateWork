@@ -14,7 +14,7 @@ int index(char *s,char *t){
     return a;
 }
 int main(){
-    char *s="abcde",*t="bd";
+    char *s="abcde",*t="bcd";
     int a=index(s,t);
     cout<<a;
 

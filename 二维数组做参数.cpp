@@ -39,13 +39,13 @@ void convert(int **a)
 	}
 }
 //方法 2:
-int main()
+/*int main()
 {
 	void move(int *);
 	int a[3][3],*p;
 	p=&a[0][0];
 	move(p);
-}
+}*/
 void move(int *p)
 {
 	for(int i=0;i<3;i++)

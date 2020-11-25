@@ -14,5 +14,6 @@ int main(){
         else x2=x;
     }while(f(x)<=1e-5);
     cout<<x;
+    double d[]={1,2,3,4,5};
 
 }

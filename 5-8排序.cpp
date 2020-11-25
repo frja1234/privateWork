@@ -9,12 +9,9 @@ void insertSort(int a[], int n);
 //快速排序
 void quickSort(int a[], int low, int high);
 int main() {
-  int a[10];
-  for (int i = 0; i < 10; i++) {
-    cin >> a[i];
-  }
-  insertSort(a, 10);
-  for (int i = 0; i < 10; i++) {
+  int a[7]={5,3,4,7,3,5,6};
+  selectSort(a, 10);
+  for (int i = 0; i < 7; i++) {
     cout << a[i] << "    ";
   }
   haleSeek(a, 10, 4);
@@ -48,22 +45,9 @@ void insertSort(int a[], int n) {
     a[preIndex + 1] = current;
   }
 }
-
-void selectSort(int a[], int n) {
-  int temp, minIndex;
-  for (int i = 0; i < n; i++) {
-    minIndex = i;
-    for (int j = i + 1; j < n; j++) {
-      if(a[minIndex]>a[j])minIndex=j;
-    }
-    temp = a[minIndex];
-    a[minIndex] = a[i];
-    a[i] = temp;
-  }
-}
 void shellSort(int a[], int n) {
   int temp, gap, preIndex;
-  gap=5;
+  gap = 5;
   gap /= 2;
   while (gap > 0) {
     for (int i = gap; i < n; i++) {
@@ -76,6 +60,18 @@ void shellSort(int a[], int n) {
       a[preIndex + gap] = temp;
     }
     gap /= 2;
+  }
+}
+void selectSort(int a[], int n) {
+  int temp, minIndex;
+  for (int i = 0; i < n; i++) {
+    minIndex = i;
+    for (int j = i; j < n; j++) {
+      if(a[minIndex]>a[j])minIndex=j;
+    }
+    temp = a[minIndex];
+    a[minIndex] = a[i];
+    a[i] = temp;
   }
 }
 void quickSort(int a[], int low, int high) {

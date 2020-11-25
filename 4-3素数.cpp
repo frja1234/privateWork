@@ -45,9 +45,6 @@ int main(){
 	int m,count=0;
     cin>>m;
     if(m==2)count=2;
-    else if(m%2==0){
-        count=3;
-    }
     else{
         for(int i=1;i<=m;i+=2){
             if(m%i==0)count++;

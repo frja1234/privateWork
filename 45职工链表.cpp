@@ -98,7 +98,7 @@ worker* deleteByAge(worker *head){
                 delete(p);
                 d=d->next;
             }
-            r=r->next;
+            r=r->next;                                
         }
         return d;
 }
