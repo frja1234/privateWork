@@ -24,7 +24,7 @@ void haleSeek(int a[], int n, int x) {
     if (a[mid] == x)
       break;
     if (a[mid] < x)
-      low = mid + 1;
+      low = mid + 1; 
     else
       heigh = mid - 1;
   }
